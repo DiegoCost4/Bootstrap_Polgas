@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title img src="./assets/Gas.png" alt="Logo da Polgás" width="50"> Distribuidora de Gases e Equipamentos para Solda</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="./assets/Gas.png" sizes="128x128">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-XbPP7lUJ0LftRLpeP/Z/9a5dRKR6NLId4EN2O1N9IXu3XQ+/1Vr/q6/+yVv5o0/2zskrn9DTcHKCzu/50M0UJw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <style>
+        /* Define a palheta de cores */
+        :root {
+            --primary-color: #034AA6;
+            --secondary-color: #034C8C;
+            --highlight-color: #D91818;
+            --background-color: #F2F2F2;
+        }
+
+        body {
+            background-color: var(--background-color);
+        }
+
+        .navbar {
+            background-color: var( --highlight-color);
+        }
+
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        .jumbotron {
+            background-color: var(--secondary-color);
+            color: #fff;
+        }
+
+        .featurette-divider {
+            margin: 5rem 0;
+        }
+
+        .featurette-heading {
+            color: var(--primary-color);
+        }
+
+        .footer {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 40px 0;
+        }
+
+        /* Botão flutuante do WhatsApp */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+
+        
+        }
+        .navbar-dark .navbar-nav .nav-link,
+        .navbar-dark .navbar-toggler {
+            color: #ffffff !important; /* Cor preta */
+        }
+        .red-banner {
+            background-color: #D91818;
+        }
+
+        .red-banner p {
+            margin-bottom: 5px;
+        }
+        #mapa {
+            height: 400px;
+            width: 100%;
+        }
+
+        .featurette {
+        display: flex;
+        align-items: center;
+    }
+
+    .featurette .col-md-7,
+    .featurette .col-md-5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navbar-color {
+        background-color: var( --highlight-color); /* substitua pela cor da sua barra de navegação */
+    }
+    /* Estilização das opções do menu suspenso quando o mouse passa sobre elas */
+    .navbar-color .dropdown-item:hover {
+        color: #fff !important; /* Cor do texto ao passar o mouse */
+        background-color: #990000 !important; /* Cor de fundo ao passar o mouse */
+    }
+    .whatsapp-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        width: 60px;
+        height: 60px;
+        border: none;
+        border-radius: 50%; /* Para torná-lo redondo */
+        background-color: #25D366; /* Cor do WhatsApp */
+        background-image: url('./assets/icon-wpppsd.png'); /* Adicione o caminho para sua imagem */
+        background-size: 110%; /* Ajuste o tamanho da imagem conforme necessário */
+        background-position: center; /* Posicione a imagem no centro do botão */
+        background-repeat: no-repeat; /* Evita repetição da imagem */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        overflow: hidden; /* Garante que a imagem não ultrapasse os limites do botão */
+    }
+    .jumbotron{
+        background-image: linear-gradient(rgba(3, 76, 140, 0.5), rgba(3, 76, 140, 0.5)), url('./assets/corte-de-metal-com-equipamento-de-plasma-na-planta.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;        
+    }
+
+
+
+    </style>
+    
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <img src="./assets/logo_Polgas.png" alt="Logo da Polgás" width="150">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-main" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./loja.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Loja
+                        </a>
+                        <ul class="dropdown-menu navbar-color">
+                          <li><a class="dropdown-item nav-link navbar-color" href="loja.html">Todos Produtos</a></li>
+                          <li><a class="dropdown-item nav-link navbar-color" href="#">Maquinas de Solda</a></li>
+                          <li><a class="dropdown-item nav-link navbar-color" href="#">Reguladores</a></li>
+                          <li><a class="dropdown-item nav-link navbar-color" href="#">Gás</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-main" href="#">Gases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-main" href="#">Equipamentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-main" href="#">EPIs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-main" href="#">Instalações</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+
+    <!-- Carrossel de Imagens -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/trabalho-de-soldagem-com-construcao-metalica-na-fabrica-de-metal-ocupada.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/vista-frontal-do-trabalhador-com-mascara-de-protecao-e-luvas.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/tubos-cobre.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="container mt-5">
+        <div class="jumbotron">
+            
+            <h1 class="display-4">Bem-vindo à Polgás!</h1>
+            <p class="lead">Somos uma distribuidora de gases para solda e afins, oferecendo também equipamentos,
+                EPIs e serviços de instalação de tubulações de gases.</p>
+            <hr class="my-4">
+            <p>Estamos comprometidos em fornecer produtos e serviços de alta qualidade para atender às necessidades dos
+                nossos clientes.</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Destaques -->
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Nossos Gases.</h2>
+                <p class="lead">Oferecemos uma ampla variedade de gases para solda, garantindo a qualidade e segurança
+                    em suas operações.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-fluid mx-auto" src="assets/cylinders-1024x576.jpg" alt="Gases">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Equipamentos e EPIs.</h2>
+                <p class="lead">Além dos gases, fornecemos equipamentos de solda e EPIs para garantir a segurança e
+                    eficiência em seu trabalho.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="featurette-image img-fluid mx-auto" src="assets/Equipamentos&acessorios.png" alt="Equipamentos" width="320">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Instalações de Tubulações.</h2>
+                <p class="lead">Realizamos serviços de instalação de tubulações de gases, garantindo eficiência e
+                    segurança em sua operação.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-fluid mx-auto" src="assets/instalacao_tubo_de_gas (3).jpg" alt="Instalações" height="200">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Formulário de Contato -->
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h2>Entre em Contato</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea class="form-control" id="message" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block mt-3">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- Faixa vermelha com informações de contato -->
+    <div class="red-banner text-white py-4 text-center">
+        <div class="container">
+            <p class="mb-0">Se preferir, entre em contato conosco ligando, enviando uma mensagem pelo WhatsApp ou visitando-nos pessoalmente.</p>
+            <p class="mb-0">Av. Tenente Marques nº3263 – Polvilho</p>
+            <p class="mb-0">Cajamar – SP – CEP:07770-000</p>
+            <p class="mb-0">11 4448-1888 | 11 4448-2828 | 11 9.8322-5034</p>
+            <p>contato@polgas.com.br</p>
+        </div>
+    </div>
+<br>
+<br>
+
+<div id="mapa">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14645.773489446565!2d-46.8529516!3d-23.4083458!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cefacc49d8ecd3%3A0x89567ba9aa9f4d6c!2sPolg%C3%A1s%20Distribuidora%20de%20Gases%20Industriais%2C%20Tudo%20para%20Corte%20e%20Solda.!5e0!3m2!1spt-BR!2sbr!4v1706873029931!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=551144485959&text=Ol%C3%A1%2C%20preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20seus%20servi%C3%A7os." target="_blank" class="whatsapp-btn btn btn-success btn-lg rounded-circle">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Rodapé -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p>&copy; 2024 Polgás - Distribuidora de Gases e Equipamentos para Solda</p>
+        </div>
+    </footer>
+
+    <!-- Scripts do Bootstrap e jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDACNpQbHyWp7wgUiF1JpsUnp2Yo_4y9Vo&callback=inicializarMapa" async defer></script>
+
+</body>
+<script>
+    function inicializarMapa() {
+        // Geocodificação do endereço
+        var geocoder = new google.maps.Geocoder();
+        var endereco = "Av. Ten. Marques, 3263 - Polvilho, Cajamar - SP, 07791-700";
+
+        geocoder.geocode({ 'address': endereco }, function (results, status) {
+            if (status == google.maps.GeocoderStatus.OK) {
+                var coordenadas = results[0].geometry.location;
+
+                // Opções do mapa
+                var opcoesMapa = {
+                    zoom: 18, // Nível de zoom
+                    center: coordenadas // Centro do mapa
+                };
+
+                // Elemento do mapa
+                var mapa = new google.maps.Map(document.getElementById('mapa'), opcoesMapa);
+
+                // Marcador no mapa
+                var marcador = new google.maps.Marker({
+                    position: coordenadas,
+                    map: mapa,
+                    title: 'Localização da Polgás'
+                });
+            } else {
+                alert('Não foi possível encontrar a localização: ' + status);
+            }
+        });
+    }
+</script>
+</html>

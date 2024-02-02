@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja - Polgás</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="./assets/Gas.png" sizes="128x128">
+    <!-- Adicione seus próprios estilos personalizados, se necessário -->
+</head>
+<style>
+    /* Define a palheta de cores */
+    :root {
+        --primary-color: #034AA6;
+        --secondary-color: #034C8C;
+        --highlight-color: #D91818;
+        --background-color: #F2F2F2;
+    }
+
+    body {
+        background-color: var(--background-color);
+    }
+
+    .navbar {
+        background-color: var( --highlight-color);
+    }
+
+    .navbar-brand,
+    .navbar-nav .nav-link {
+        color: #fff;
+    }
+
+    .featurette-divider {
+        margin: 5rem 0;
+    }
+
+    .featurette-heading {
+        color: var(--primary-color);
+    }
+
+    .footer {
+        background-color: var(--primary-color);
+        color: #fff;
+        padding: 40px 0;
+    }
+
+    /* Botão flutuante do WhatsApp */
+    .whatsapp-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .navbar-dark .navbar-nav .nav-link,
+    .navbar-dark .navbar-toggler {
+        color: #ffffff !important; /* Cor preta */
+    }
+
+    .red-banner {
+        background-color: #D91818;
+    }
+
+    .red-banner p {
+        margin-bottom: 5px;
+    }
+
+
+    .featurette {
+        display: flex;
+        align-items: center;
+    }
+
+    .featurette .col-md-7,
+    .featurette .col-md-5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .navbar-color {
+        background-color: var( --highlight-color); /* substitua pela cor da sua barra de navegação */
+    }
+
+    /* Estilização das opções do menu suspenso quando o mouse passa sobre elas */
+    .navbar-color .dropdown-item:hover {
+        color: #fff !important; /* Cor do texto ao passar o mouse */
+        background-color: #990000 !important; /* Cor de fundo ao passar o mouse */
+    }
+
+    .whatsapp-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        width: 60px;
+        height: 60px;
+        border: none;
+        border-radius: 50%; /* Para torná-lo redondo */
+        background-color: #25D366; /* Cor do WhatsApp */
+        background-image: url('./assets/icon-wpppsd.png'); /* Adicione o caminho para sua imagem */
+        background-size: 110%; /* Ajuste o tamanho da imagem conforme necessário */
+        background-position: center; /* Posicione a imagem no centro do botão */
+        background-repeat: no-repeat; /* Evita repetição da imagem */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        overflow: hidden; /* Garante que a imagem não ultrapasse os limites do botão */
+    }
+
+</style>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <img src="./assets/logo_Polgas.png" alt="Logo da Polgás" width="150">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-main" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./loja.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Loja
+                        </a>
+                        <ul class="dropdown-menu navbar-color">
+                          <li><a class="dropdown-item nav-link navbar-color" href="loja.html">Todos Produtos</a></li>
+                          <li><a class="dropdown-item nav-link navbar-color" href="#">Reguladores</a></li>
+                          <li><a class="dropdown-item nav-link navbar-color" href="#">Gás</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-main" href="#">Gases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-main" href="#">Equipamentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-main" href="#">EPIs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-main" href="#">Instalações</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Conteúdo da página -->
+    <div class="container mt-5">
+        <h1>Produtos</h1>
+        <!-- Produtos de Gases -->
+        <h2>Gases</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./assets/l_TMTqX0NtjniWjJJB_JqBML8436Lnv7 (1).png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">C2H2 – Acetileno</h5>
+                        <p class="card-text">Descubra o poder do gás acetileno para soldagem e corte! Com chamas extremamente quentes, 
+                            é essencial para aplicações industriais. Seguro e eficiente, nosso acetileno é produzido com os mais altos 
+                            padrões. Aproveite sua versatilidade e qualidade!</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./assets/gas_carbono (1).png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Co2 – Gás Carbono</h5>
+                        <p class="card-text">
+                            Explore a eficiência do CO2 - Gás Carbono! Ideal para soldagem e diversas aplicações industriais. Seguro e confiável, nosso CO2 é produzido com qualidade superior. Potencialize seus processos com nossa seleção de CO2 de alta qualidade!</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Produtos de Máquinas de Solda -->
+        <h2>Máquinas de Solda</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="caminho-para-imagem" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nome do Produto 1</h5>
+                        <p class="card-text">Descrição breve do produto 1.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repita esta estrutura para os outros produtos de Máquinas de Solda -->
+        </div>
+
+        <!-- Produtos de EPIs -->
+        <h2>EPIs</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="caminho-para-imagem" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nome do Produto 1</h5>
+                        <p class="card-text">Descrição breve do produto 1.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repita esta estrutura para os outros produtos de EPIs -->
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="footer text-center mt-5">
+        <div class="container">
+            <p>&copy; 2024 Polgás - Distribuidora de Gases e Equipamentos para Solda</p>
+        </div>
+    </footer>
+
+    <!-- Scripts do Bootstrap e jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
